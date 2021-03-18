@@ -1,3 +1,125 @@
 @media screen and (max-width: 480px) {
-    
+    body{
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    body a {
+        text-decoration: none;
+        color: black;
+    }
+    body h2 {
+        font-weight: bolder;
+    }
+/*HEADER*/
+    header {
+        text-align: center;
+    }
+    header img {
+        margin: 17px 17px 10px 17px;
+        width: 43%;
+    }
+    .localisation {
+        background-color: #eaeaea;
+        padding: 17px;
+    }
+    .localisation i {
+        padding-right: 14px;
+    }
+/*FIN DU HEADER*/
+/*BOOKING*/
+    .booking {
+        padding: 20px;
+        background-color: #f6f6f6;
+        text-align: center;
+    }
+    .booking h1 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .booking p {
+        color: #4d4d4d;
+        font-size: large;
+    }
+    .explo {
+        display: flex;
+        border-radius: 2rem;
+        margin: 30px 45px 40px 45px;
+        background: linear-gradient(#ee73da, #a25bdc);
+        justify-content: center;
+        box-shadow: 2px 5px 16px 0px #cfcfcf, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+    }
+    .explo p {
+        color: white;
+    }
+/*FIN BOOKING*/
+/*FONCTIONNEMENT*/
+    .fonctionnement{
+        padding: 20px;
+    }
+    .fonction-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+    .operation{
+        display: flex;
+        align-items: center;
+        border: 2px solid #f6f6f6;
+        border-radius: 1.5rem;
+        margin-bottom: 1rem;
+        background-color: #f6f6f6;
+        width: 100%;
+        position: relative;
+        box-shadow: 2px 5px 16px 0px #cfcfcf, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+    }
+    .titre {
+        padding: 10px 15px;
+    }
+    .titre p {
+        font-weight: bold;
+    }
+    .operation i {
+        padding: 0 25px;
+        color: #7e7e7e;
+        font-size: 1.2rem;
+    }
+    .numbers {
+        background-color: #9356dc;
+        color: white;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        line-height: 180%;
+        justify-content: center;
+        border-radius: 100%;
+        position: absolute;
+        top: 23px;
+        left: -15px;
+    }
+/*FIN FONCTIONNEMENT*/
+/*RESTAURANTS*/
+    .restaurants {
+        background-color: #f6f6f6;
+    }
+    .restaurants h2 {
+        margin: 0;
+        padding: 40px 20px 0 20px;
+    }
+    .restaurants a img {
+        height: 150px;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    figure {
+        margin: 0;
+        padding: 20px;
+    }
+    figcaption {
+        background-color: white;
+    }
+    figcaption h3, p {
+        margin: 0;
+    }
 }
