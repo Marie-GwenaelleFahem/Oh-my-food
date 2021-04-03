@@ -11,69 +11,6 @@
     body h2 {
         font-weight: bolder;
     }
-    .loader {
-        font-size: 10px;
-        margin: 50px auto;
-        text-indent: -9999em;
-        width: 11em;
-        height: 11em;
-        border-radius: 50%;
-        background: #ffffff;
-        background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-        background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-        background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-        background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-        background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-        position: relative;
-        -webkit-animation: load3 1.4s infinite linear;
-        animation: load3 1.4s infinite linear;
-        -webkit-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        transform: translateZ(0);
-      }
-      .loader:before {
-        width: 50%;
-        height: 50%;
-        background: #ffffff;
-        border-radius: 100% 0 0 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: '';
-      }
-      .loader:after {
-        background: #0dc5c1;
-        width: 75%;
-        height: 75%;
-        border-radius: 50%;
-        content: '';
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-      }
-      @-webkit-keyframes load3 {
-        0% {
-          -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-      @keyframes load3 {
-        0% {
-          -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
 /*HEADER*/
     header {
         text-align: center;
@@ -91,6 +28,29 @@
     }
     .localisation i {
         padding-right: 14px;
+    }
+    .resto_header{
+        display: flex;
+        align-items: center;
+    }
+    .resto_header i {
+        padding: 0 20px;
+        font-size: larger;
+        color: #353535;
+    }
+    .resto_header h1 {
+        box-shadow: none;
+        padding: 5px 45px;
+    }
+    .menu_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 25px;
+        font-size: large;
+    }
+    .menu_header i {
+        font-size: x-large;
     }
 /*FIN DU HEADER*/
 /*BOOKING*/
@@ -254,4 +214,18 @@
         align-items: flex-start;
     }
 /*FIN FOOTER*/
+/*PAGE RESTAURANTS*/
+.background img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.menu {
+    font-family: 'Shrikhand', cursive;
+    position: relative;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -4rem;
+    background-color: #f6f6f6;
+}
+/*FIN PAGE RESTAURANTS*/
 }
