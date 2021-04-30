@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 @media screen and (max-width: 480px) {
     body{
         font-family: 'Roboto', sans-serif;
@@ -16,7 +19,7 @@
         text-align: center;
     }
     header h1 {
-        font-family: Shrikhand,"cursive";
+        font-family: 'Shrikhand', cursive;
         margin: 0;
         position: relative;
         box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
@@ -29,29 +32,7 @@
     .localisation i {
         padding-right: 14px;
     }
-    .resto_header{
-        display: flex;
-        align-items: center;
-    }
-    .resto_header i {
-        padding: 0 20px;
-        font-size: larger;
-        color: #353535;
-    }
-    .resto_header h1 {
-        box-shadow: none;
-        padding: 5px 45px;
-    }
-    .menu_header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 25px;
-        font-size: large;
-    }
-    .menu_header i {
-        font-size: x-large;
-    }
+    
 /*FIN DU HEADER*/
 /*BOOKING*/
     .booking {
@@ -135,6 +116,7 @@
 /*RESTAURANTS*/
     .restaurants {
         background-color: #f6f6f6;
+        padding-bottom: 30px;
     }
     .restaurants h2 {
         margin: 0;
@@ -156,30 +138,38 @@
         top: 24px;
         right: 35px;
     }
-    figure {
+    .cartes-resto {
         margin: 0;
         padding: 10px 20px 10px 20px;
         position: relative;
     }
-    figcaption {
+    .description {
         background-color: white;
         border-radius: 0 0 1rem 1rem;
         box-shadow: 2px 5px 16px 0px #e7e7e7, 5px 5px 15px 5px rgb(0 0 0 / 0%);
         position: relative;
     }
-    figcaption h3 {
+    .description h3 {
         margin: 0;
-        padding: 5px 0 0 5px;
+        padding: 14px 0 5px 10px;
     }
-    figcaption p {
+    .description p {
         margin: 0;
-        padding: 5px 0 0 5px;
+        padding: 0 0 12px 10px;
     }
-    figcaption i {
+    .description i {
         width: 20px;
+        font-size: x-large;
     }
-    figcaption i:hover{
+    .description i:hover{
         color: #c566db;
+    }
+    .uno{
+        display: inline-block;
+        width: 80%;
+    }
+    .due {
+        display: inline-block;
     }
 /*FOOTER*/
     footer {
@@ -187,7 +177,7 @@
     }
     footer h3 {
         font-family: 'Shrikhand', cursive;
-        color: white;
+        color: #ffffff;
         margin: 0;
         padding: 15px;
     }
@@ -197,12 +187,12 @@
         padding-bottom: 20px;
     }
     ul i {
-        color: white;
+        color: #ffffff;
         padding-right: 10px;
     }
     li {
         list-style-type: none;
-        color: white;
+        color: #ffffff;
         padding-bottom: 10px;
     }
     .footer-container {
@@ -215,17 +205,93 @@
     }
 /*FIN FOOTER*/
 /*PAGE RESTAURANTS*/
-.background img{
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-.menu {
-    font-family: 'Shrikhand', cursive;
-    position: relative;
-    border-radius: 2rem 2rem 0 0;
-    margin-top: -4rem;
-    background-color: #f6f6f6;
-}
+    .resto_header{
+        display: flex;
+        align-items: center;
+    }
+    .resto_header i {
+        padding: 0 20px;
+        font-size: larger;
+        color: #353535;
+    }
+    .resto_header h1 {
+        box-shadow: none;
+        padding: 5px 45px;
+    }
+    .menu_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 18px;
+        font-size: large;
+        font-family: 'Shrikhand', cursive;
+    }
+    .menu_header h2{
+        letter-spacing: 0.7px;
+    }
+    .menu_header i {
+        font-size: x-large;
+    }
+    .background img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .entree{
+        background-color: #f6f6f6;
+    }
+    .menu {
+        position: relative;
+        border-radius: 2rem 2rem 0 0;
+        margin-top: -4rem;
+        background-color: #f6f6f6;
+    }
+    .menu_type {
+        background-color: #f6f6f6;
+    }
+    .menu_type h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        text-transform: uppercase;
+        font-weight: lighter;
+        color: #4c4c4c;
+        padding-left: 15px;
+        margin: 0;
+    }
+    .line {
+        border-bottom : solid 3px #99e2d0;
+        width: 42px;
+        margin-left: 16px;
+        padding-bottom: 5px;
+    }
+    .plats {
+        background-color: white;
+        border-radius: 1rem 1rem 1rem 1rem;
+        margin: 15px 10px;
+        box-shadow: 2px 5px 16px 0px #e7e7e7, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+    }
+    .plats2 {
+        width: 84%;
+        display: inline-block;
+    }
+    .plats2 h3 {
+        margin: 10px;
+    }
+    .plats2 p {
+        margin: 10px;
+        color: #4c4c4c;
+    }
+    .price {
+        display: inline-block;
+        font-weight: bold;
+    }
+    .plat_principal {
+        background-color: #f6f6f6;
+        margin-top: 10px;
+    }
+    .desserts {
+        background-color: #f6f6f6;
+        margin-top: 10px;
+    }
 /*FIN PAGE RESTAURANTS*/
 }
