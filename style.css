@@ -234,6 +234,17 @@ body {
     .menu_header i {
         font-size: x-large;
     }
+    .btn {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .btn i:active {
+        opacity: 0;
+        transition: .8s;
+        content: "";
+        background: linear-gradient(0deg,#9356dc,#ff79da);
+    }
     .background img{
         height: 300px;
         width: 100%;
