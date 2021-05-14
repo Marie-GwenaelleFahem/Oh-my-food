@@ -56,10 +56,13 @@ body {
         justify-content: center;
         box-shadow: 2px 5px 16px 0px #cfcfcf, 5px 5px 15px 5px rgb(0 0 0 / 0%);
         cursor: pointer;
-        transition: text-shadow 0.5s 0s ease;
     }
     .explo:hover {
-        color: red;
+        transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
     }
     .explo p {
         color: white;
