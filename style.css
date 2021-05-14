@@ -55,6 +55,11 @@ body {
         background: linear-gradient(#ee73da, #a25bdc);
         justify-content: center;
         box-shadow: 2px 5px 16px 0px #cfcfcf, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+        cursor: pointer;
+        transition: text-shadow 0.5s 0s ease;
+    }
+    .explo:hover {
+        color: red;
     }
     .explo p {
         color: white;
@@ -234,16 +239,12 @@ body {
     .menu_header i {
         font-size: x-large;
     }
-    .btn {
-        border: none;
-        background: none;
+    .coeur:hover {
         cursor: pointer;
-    }
-    .btn i:active {
-        opacity: 0;
-        transition: .8s;
-        content: "";
-        background: linear-gradient(0deg,#9356dc,#ff79da);
+        background: linear-gradient(to bottom left, #9356dc, #ff79da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0;
     }
     .background img{
         height: 300px;
@@ -282,6 +283,13 @@ body {
         border-radius: 1rem 1rem 1rem 1rem;
         margin: 15px 10px;
         box-shadow: 2px 5px 16px 0px #e7e7e7, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+        overflow: hidden;
+        cursor: pointer;
+        animation: itemAppear 1.2s;
+        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        animation-fill-mode: both;
+        /*transform: scale(0);
+        max-width: 100%;*/
     }
     .plats2 {
         width: 84%;
@@ -297,6 +305,38 @@ body {
     .price {
         display: inline-block;
         font-weight: bold;
+    }
+    /*.price:hover{
+
+    }*/
+    .confirmation{
+        background-color: #99E2D0;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display:inline-block;
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.5s;
+    }
+    .coeur:hover:hover{
+        margin-right: -1rem;
+    }
+    .wrapIcon{
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
+    .wrapIcon i {
+        color: #99E2D0;
+    }
+    .wrapIcon:hover{
+        transform: rotate(0);
     }
     .plat_principal {
         background-color: #f6f6f6;
