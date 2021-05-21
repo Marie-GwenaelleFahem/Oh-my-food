@@ -1039,7 +1039,7 @@ body h2 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 55px;
+        padding: 10px 470px;
         font-size: large;
         font-family: 'Shrikhand', cursive;
     }
@@ -1063,7 +1063,9 @@ body h2 {
         width: 100%;
         object-fit: cover;
     }
-    .entree{
+    .repas {
+        display: flex;
+        justify-content: center;
         background-color: #f6f6f6;
     }
     .menu {
@@ -1170,11 +1172,9 @@ body h2 {
     
     .plat_principal {
         background-color: #f6f6f6;
-        margin-top: 10px;
     }
     .desserts {
         background-color: #f6f6f6;
-        margin-top: 10px;
     }
     .commander {
         background-color: #f6f6f6;
@@ -1190,7 +1190,7 @@ body h2 {
     .order {
         display: flex;
         border-radius: 2rem;
-        margin: 28px 220px;
+        margin: 28px 540px;
         background: linear-gradient(#ee73da, #a25bdc);
         justify-content: center;
         box-shadow: 2px 5px 16px 0px #cfcfcf, 5px 5px 15px 5px rgb(0 0 0 / 0%);
