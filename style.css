@@ -689,7 +689,6 @@ body h2 {
     flex-direction: column;
     background-color: #f6f6f6;
     }
-    
     .entree{
         background-color: #f6f6f6;
     }
@@ -727,12 +726,13 @@ body h2 {
         animation: itemAppear 1.2s;
         animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
         animation-fill-mode: both;
-        /*transform: scale(0);
-        max-width: 100%;*/
+        text-overflow: ellipsis;
     }
     .plats2 {
         width: 84%;
         display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .plats2 h3 {
         margin: 10px;
@@ -746,12 +746,10 @@ body h2 {
         font-weight: bold;
     }
     .price:hover{
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+        margin-left: -4rem;
+        transition-duration: 0.6s;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .confirmation{
         background-color: #99E2D0;
@@ -764,13 +762,11 @@ body h2 {
         border-radius: 0 20px 20px 0;
         overflow: hidden;
     }
-    .confirmation:active{
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+    .confirmation:hover{
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        margin-left: -4rem;
+        overflow: visible;
     }
     .wrapIcon{
         height: 4.6rem;
@@ -781,20 +777,23 @@ body h2 {
         justify-content:center;
         border-radius: 100px;
         transform: rotate(180deg);
-        transition-duration: 0.5s;
+        transition-duration: 0.6s;
+        /*overflow: hidden;*/
+        animation: slide-left .5 ease;
     }
-    .wrapIcon:active {
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+    .wrapIcon:hover {
+        animation: slide-left .5 ease;
+        /*margin-left: -4rem;*/
+        overflow: visible;
     }
     .wrapIcon i {
         color: #99E2D0;
+        overflow: visible;
     }
-    
+    .wrapIcon i:hover {
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
     .plat_principal {
         background-color: #f6f6f6;
         margin-top: 10px;
