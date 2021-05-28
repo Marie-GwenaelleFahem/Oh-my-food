@@ -257,7 +257,7 @@ body h2 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 55px;
+        padding: 10px 300px;
         font-size: large;
         font-family: 'Shrikhand', cursive;
     }
@@ -281,6 +281,11 @@ body h2 {
         width: 100%;
         object-fit: cover;
     }
+    .repas {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f6f6f6;
+        }
     .entree{
         background-color: #f6f6f6;
     }
@@ -408,7 +413,7 @@ body h2 {
     .order {
         display: flex;
         border-radius: 2rem;
-        margin: 28px 220px;
+        margin: 28px 470px;
         background: linear-gradient(#ee73da, #a25bdc);
         justify-content: center;
         box-shadow: 2px 5px 16px 0px #cfcfcf, 5px 5px 15px 5px rgb(0 0 0 / 0%);
@@ -741,20 +746,23 @@ body h2 {
         margin: 10px;
         color: #4c4c4c;
     }
+    .plat3 {
+        display: inline-block;
+    }
     .price {
         display: inline-block;
         font-weight: bold;
     }
     .price:hover{
-        margin-left: -4rem;
+        margin-left: -2rem;
         transition-duration: 0.6s;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
     .confirmation{
         background-color: #99E2D0;
-        margin: -1rem -5rem -1rem 1rem;
-        width: 0px;
+        margin: -1rem -5rem -1rem 2rem;
+        /*width: 0px;*/
         display:inline-block;
         align-items:center;
         justify-content:center;
@@ -763,15 +771,14 @@ body h2 {
         overflow: hidden;
     }
     .confirmation:hover{
-        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        margin-left: -4rem;
+        /*-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;*/
+        margin-left: -2rem;
         overflow: visible;
     }
     .wrapIcon{
         height: 4.6rem;
         width: 3.6rem;
-        background-color: white;
         display:flex;
         align-items:center;
         justify-content:center;
@@ -780,19 +787,20 @@ body h2 {
         transition-duration: 0.6s;
         /*overflow: hidden;*/
         animation: slide-left .5 ease;
+        background-color: #99E2D0;
     }
     .wrapIcon:hover {
         animation: slide-left .5 ease;
         /*margin-left: -4rem;*/
+        transform: rotate(180deg);
         overflow: visible;
     }
     .wrapIcon i {
-        color: #99E2D0;
+        color: white;
         overflow: visible;
     }
     .wrapIcon i:hover {
-        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        transform: rotate(180deg);
     }
     .plat_principal {
         background-color: #f6f6f6;
