@@ -323,36 +323,46 @@ body h2 {
         animation: itemAppear 1.2s;
         animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
         animation-fill-mode: both;
-        /*transform: scale(0);
-        max-width: 100%;*/
+        text-overflow: ellipsis;
     }
     .plats2 {
         width: 84%;
         display: inline-block;
+        position: relative;
+    }
+    .plats2:hover{
+        width: 70%;
+        transition-duration: 0.6s;
     }
     .plats2 h3 {
         margin: 10px;
+        white-space: nowrap;
     }
     .plats2 p {
         margin: 10px;
         color: #4c4c4c;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .plat3 {
+        display: inline-block;
+        position: absolute;
+        line-height: 6em;
     }
     .price {
         display: inline-block;
         font-weight: bold;
     }
     .price:hover{
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+        margin-left: -4rem;
+        transition-duration: 0.6s;
+        white-space: nowrap;
     }
     .confirmation{
         background-color: #99E2D0;
-        margin: -1rem -5rem -1rem 1rem;
-        width: 0px;
+        margin: -1rem -5rem -1rem 1.5rem;
+        /*width: 0px;*/
         display:inline-block;
         align-items:center;
         justify-content:center;
@@ -360,37 +370,45 @@ body h2 {
         border-radius: 0 20px 20px 0;
         overflow: hidden;
     }
-    .confirmation:active{
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+    .confirmation:hover{
+        margin-left: -2rem;
+        overflow: visible;
     }
     .wrapIcon{
-        height: 4.6rem;
-        width: 3.6rem;
-        background-color: white;
+        height: 6.1rem;
+        width: 3.2rem;
         display:flex;
         align-items:center;
         justify-content:center;
         border-radius: 100px;
-        transform: rotate(180deg);
-        transition-duration: 0.5s;
+        transition-duration: 0.6s;
+        /*overflow: hidden;*/
+        animation: slide-left .5 ease;
+        background-color: #99E2D0;
     }
-    .wrapIcon:active {
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+    .wrapIcon:hover {
+        animation: slide-left .5 ease;
+        /*margin-left: -4rem;*/
+        overflow: visible;
+    }
+    .checkIcon {
+        height: 1.8rem;
+        width: 1.8rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(90deg);
+        transition-duration: .5s;
+    }
+    .checkIcon:hover {
+        transform: rotate(0);
     }
     .wrapIcon i {
-        color: #99E2D0;
+        color: #99e2d0;
+        overflow: visible;
     }
-    
     .plat_principal {
         background-color: #f6f6f6;
         margin-top: 10px;
@@ -690,9 +708,9 @@ body h2 {
         object-fit: cover;
     }
     .repas {
-    display: flex;
-    flex-direction: column;
-    background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        background-color: #f6f6f6;
     }
     .entree{
         background-color: #f6f6f6;
@@ -736,33 +754,40 @@ body h2 {
     .plats2 {
         width: 84%;
         display: inline-block;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        position: relative;
+    }
+    .plats2:hover{
+        width: 70%;
+        transition-duration: 0.6s;
     }
     .plats2 h3 {
         margin: 10px;
+        white-space: nowrap;
     }
     .plats2 p {
         margin: 10px;
         color: #4c4c4c;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .plat3 {
         display: inline-block;
+        position: absolute;
+        line-height: 6em;
     }
     .price {
         display: inline-block;
         font-weight: bold;
     }
     .price:hover{
-        margin-left: -2rem;
+        margin-left: -3.7rem;
         transition-duration: 0.6s;
         white-space: nowrap;
-        text-overflow: ellipsis;
     }
     .confirmation{
         background-color: #99E2D0;
-        margin: -1rem -5rem -1rem 2rem;
-        /*width: 0px;*/
+        margin: -1rem -5rem -2rem 1.6rem;
         display:inline-block;
         align-items:center;
         justify-content:center;
@@ -771,36 +796,44 @@ body h2 {
         overflow: hidden;
     }
     .confirmation:hover{
-        /*-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;*/
         margin-left: -2rem;
         overflow: visible;
     }
     .wrapIcon{
-        height: 4.6rem;
-        width: 3.6rem;
+        height: 6.1rem;
+        width: 3.7rem;
         display:flex;
         align-items:center;
         justify-content:center;
         border-radius: 100px;
-        transform: rotate(180deg);
         transition-duration: 0.6s;
         /*overflow: hidden;*/
         animation: slide-left .5 ease;
         background-color: #99E2D0;
+        transform: rotate(0);
     }
     .wrapIcon:hover {
         animation: slide-left .5 ease;
         /*margin-left: -4rem;*/
-        transform: rotate(180deg);
         overflow: visible;
     }
-    .wrapIcon i {
-        color: white;
-        overflow: visible;
+    .checkIcon {
+        height: 1.8rem;
+        width: 1.8rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(90deg);
+        transition-duration: .5s;
     }
-    .wrapIcon i:hover {
-        transform: rotate(180deg);
+    .checkIcon:hover {
+        transform: rotate(0);
+    }
+    .wrapIcon i {    
+        color:  #99e2d0;
+        overflow: visible;
     }
     .plat_principal {
         background-color: #f6f6f6;
@@ -1151,36 +1184,42 @@ body h2 {
         animation: itemAppear 1.2s;
         animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
         animation-fill-mode: both;
-        /*transform: scale(0);
-        max-width: 100%;*/
+        text-overflow: ellipsis;
     }
     .plats2 {
         width: 84%;
         display: inline-block;
+        position: relative;
     }
-    .plats2 h3 {
-        margin: 10px;
+    .plats2:hover{
+        width: 75%;
+        transition-duration: 0.6s;
     }
     .plats2 p {
         margin: 10px;
         color: #4c4c4c;
+    }
+    .plats2 h3 {
+        margin: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .plat3 {
+        display: inline-block;
     }
     .price {
         display: inline-block;
         font-weight: bold;
     }
     .price:hover{
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+        margin-left: -4.3rem;
+        transition-duration: 0.6s;
+        white-space: nowrap;
     }
     .confirmation{
         background-color: #99E2D0;
-        margin: -1rem -5rem -1rem 1rem;
-        width: 0px;
+        margin: -1rem -5rem -1rem 6rem;
         display:inline-block;
         align-items:center;
         justify-content:center;
@@ -1188,37 +1227,45 @@ body h2 {
         border-radius: 0 20px 20px 0;
         overflow: hidden;
     }
-    .confirmation:active{
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+    .confirmation:hover{
+        margin-left: -2rem;
+        overflow: visible;
     }
     .wrapIcon{
         height: 4.6rem;
-        width: 3.6rem;
-        background-color: white;
+        width: 3.7rem;
         display:flex;
         align-items:center;
         justify-content:center;
         border-radius: 100px;
-        transform: rotate(180deg);
-        transition-duration: 0.5s;
+        transition-duration: 0.6s;
+        /*overflow: hidden;*/
+        animation: slide-left .5 ease;
+        background-color: #99E2D0;
     }
-    .wrapIcon:active {
-        animation-timing-function: easeOutSine;
-        animation-duration: 0.4s;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: both;
+    .wrapIcon:hover {
+        animation: slide-left .5 ease;
+        /*margin-left: -4rem;*/
+        overflow: visible;
+    }
+    .checkIcon {
+        height: 1.8rem;
+        width: 1.8rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(90deg);
+        transition-duration: .5s;
+    }
+    .checkIcon:hover {
+        transform: rotate(0);
     }
     .wrapIcon i {
-        color: #99E2D0;
+        color:  #99e2d0;
+        overflow: visible;
     }
-    
     .plat_principal {
         background-color: #f6f6f6;
     }
