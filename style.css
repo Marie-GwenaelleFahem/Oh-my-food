@@ -240,6 +240,10 @@ body h2 {
         justify-content: center;
     }
     /*PAGE RESTAURANTS*/
+    header{
+        display: flex;
+        justify-content: center;
+    }
     .resto_header{
         display: flex;
         align-items: center;
@@ -331,12 +335,14 @@ body h2 {
         position: relative;
     }
     .plats2:hover{
-        width: 70%;
+        width: 68%;
         transition-duration: 0.6s;
     }
     .plats2 h3 {
         margin: 10px;
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .plats2 p {
         margin: 10px;
@@ -361,7 +367,7 @@ body h2 {
     }
     .confirmation{
         background-color: #99E2D0;
-        margin: -1rem -5rem -1rem 1.5rem;
+        margin: -1rem -5rem -2rem 1.5rem;
         /*width: 0px;*/
         display:inline-block;
         align-items:center;
@@ -757,11 +763,13 @@ body h2 {
         position: relative;
     }
     .plats2:hover{
-        width: 70%;
+        width: 68%;
         transition-duration: 0.6s;
     }
     .plats2 h3 {
         margin: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
         white-space: nowrap;
     }
     .plats2 p {
