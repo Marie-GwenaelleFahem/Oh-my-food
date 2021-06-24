@@ -191,11 +191,17 @@ body h2 {
         padding: 0 0 12px 10px;
     }
     .description i {
-        width: 20px;
+        width: 30px;
         font-size: x-large;
+        -webkit-text-fill-color: #f6f6f6;
+        -webkit-text-stroke-width: 1.8px;
+        -webkit-text-stroke-color: black;
     }
     .description i:hover{
-        color: #c566db;
+        background: linear-gradient(0deg,#9356dc,#ff79da); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0;
     }
     .uno{
         display: inline-block;
@@ -626,11 +632,17 @@ body h2 {
         padding: 0 0 12px 10px;
     }
     .description i {
-        width: 20px;
+        width: 30px;
         font-size: x-large;
+        -webkit-text-fill-color: #f6f6f6;
+        -webkit-text-stroke-width: 1.8px;
+        -webkit-text-stroke-color: black;
     }
     .description i:hover{
-        color: #c566db;
+        background: linear-gradient(0deg,#9356dc,#ff79da); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0;
     }
     .uno{
         display: inline-block;
@@ -1061,11 +1073,17 @@ body h2 {
         padding: 0 0 12px 10px;
     }
     .description i {
-        width: 20px;
+        width: 30px;
         font-size: x-large;
+        -webkit-text-fill-color: #f6f6f6;
+        -webkit-text-stroke-width: 1.8px;
+        -webkit-text-stroke-color: black;
     }
     .description i:hover{
-        color: #c566db;
+        background: linear-gradient(0deg,#9356dc,#ff79da); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0;
     }
     .uno{
         display: inline-block;
