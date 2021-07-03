@@ -224,11 +224,11 @@ body h2 {
         margin: 0;
         padding: 15px;
     }
-    ul {
+    .footer-elt {
         margin: 0;
         padding: 0;
     }
-    ul i {
+    .footer-elt i {
         color: #ffffff;
         padding-right: 10px;
     }
@@ -665,11 +665,11 @@ body h2 {
         margin: 0;
         padding: 15px;
     }
-    ul {
+    .footer-elt {
         margin: 0;
         padding: 0;
     }
-    ul i {
+    .footer-elt i {
         color: #ffffff;
         padding-right: 10px;
     }
@@ -1106,11 +1106,11 @@ body h2 {
         margin: 0;
         padding: 15px;
     }
-    ul {
+    .footer-elt {
         margin: 0;
         padding: 0;
     }
-    ul i {
+    .footer-elt i {
         color: #ffffff;
         padding-right: 10px;
     }
