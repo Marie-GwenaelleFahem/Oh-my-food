@@ -7,8 +7,8 @@
     left: 0;
     top: 0;
     background-color: hsla(0,0%,100%,.9);
-    animation: loader .01s;
-    animation-delay: 1.75s;
+    animation: loader 3s;
+    animation-delay: 3s;
     animation-fill-mode: both;
     z-index: 10000;
     display: flex;
@@ -23,9 +23,9 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin 1.5s linear;
+    animation: spin 3s linear;
 
-/*Placement du loader*/
+/*Placement de la div loading*/
     margin: auto;
     position: absolute;
     top: 0;
@@ -51,7 +51,24 @@
 }
 /*FIN LOADER*/
 
-/*ANIMATIONS PAGE RESTAURANT*/
+/*REMPLISSAGE ICONE*/
+
+@keyframes fulfill {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*ANIMATION PAGE RESTAURANT*/
 @keyframes itemAppear {
     0% {
         transform: scale(0)
