@@ -372,9 +372,9 @@ body h2 {
     .plats2 {
         width: 84%;
         display: inline-block;
-        position: relative;
+        /*position: relative;*/
     }
-    .plats2:hover{
+    .plats:hover .plats2 {
         width: 68%;
         transition-duration: 0.6s;
     }
@@ -400,11 +400,6 @@ body h2 {
         display: inline-block;
         font-weight: bold;
     }
-    .price:hover{
-        margin-left: -4rem;
-        transition-duration: 0.6s;
-        white-space: nowrap;
-    }
     .confirmation{
         background-color: #99E2D0;
         margin: -1rem -5rem -2rem 1.5rem;
@@ -415,10 +410,6 @@ body h2 {
         transition-duration: 0.5s;
         border-radius: 0 20px 20px 0;
         overflow: hidden;
-    }
-    .confirmation:hover{
-        margin-left: -2rem;
-        overflow: visible;
     }
     .wrapIcon{
         height: 6.1rem;
@@ -432,11 +423,6 @@ body h2 {
         animation: slide-left .5 ease;
         background-color: #99E2D0;
     }
-    /*.wrapIcon:hover {
-        animation: slide-left .5 ease;
-        margin-left: -4rem;
-        overflow: visible;
-    }*/
     .checkIcon {
         height: 1.8rem;
         width: 1.8rem;
@@ -448,9 +434,6 @@ body h2 {
         transform: rotate(90deg);
         transition-duration: .5s;
     }
-    /*.checkIcon:hover {
-        transform: rotate(0);
-    }*/
     .wrapIcon i {
         color: #99e2d0;
         overflow: visible;
@@ -807,7 +790,7 @@ body h2 {
         display: inline-block;
         position: relative;
     }
-    .plats2:hover{
+    .plats:hover .plats2 {
         width: 68%;
         transition-duration: 0.6s;
     }
@@ -833,10 +816,6 @@ body h2 {
         display: inline-block;
         font-weight: bold;
     }
-    .price:hover{
-        margin-left: -3.7rem;
-        transition-duration: 0.6s;
-    }
     .confirmation{
         background-color: #99E2D0;
         margin: -1rem -5rem -2rem 1.6rem;
@@ -846,10 +825,6 @@ body h2 {
         transition-duration: 0.5s;
         border-radius: 0 20px 20px 0;
         overflow: hidden;
-    }
-    .confirmation:hover{
-        margin-left: -2rem;
-        overflow: visible;
     }
     .wrapIcon{
         height: 6.1rem;
@@ -1265,7 +1240,7 @@ body h2 {
         display: inline-block;
         position: relative;
     }
-    .plats2:hover{
+    .plats:hover .plats2 {
         width: 75%;
         transition-duration: 0.6s;
     }
@@ -1286,11 +1261,6 @@ body h2 {
         display: inline-block;
         font-weight: bold;
     }
-    .price:hover{
-        margin-left: -4.3rem;
-        transition-duration: 0.6s;
-        white-space: nowrap;
-    }
     .confirmation{
         background-color: #99E2D0;
         margin: -1rem -5rem -1rem 6rem;
@@ -1300,10 +1270,6 @@ body h2 {
         transition-duration: 0.5s;
         border-radius: 0 20px 20px 0;
         overflow: hidden;
-    }
-    .confirmation:hover{
-        margin-left: -2rem;
-        overflow: visible;
     }
     .wrapIcon{
         height: 4.6rem;
